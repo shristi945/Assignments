@@ -1,0 +1,65 @@
+Documentation:
+
+Installation: 
+
+1. Install dateparser:
+
+$ git clone https://github.com/scrapinghub/dateparser.git
+$ cd dateparser
+$ python setup.py install
+
+2. Install Duckling:
+
+$ git clone https://github.com/FraBle/python-duckling.git
+$ cd python-duckilng
+$ python setup.py install
+
+Note: duckling requires visual studio build tools--> can be downloaded from here: https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017
+
+
+
+
+testcase:
+book a flight from Bangalore to Delhi for tomorrow 10am
+
+output: 
+Location:  Delhi, Bangalore
+Date:  18 May
+Time:  10:00 AM
+
+testcase:
+Book a flight to Delhi for tomorrow 10am
+
+output: 
+Location:  Delhi
+Date:  18 May
+Time:  10:00 AM
+
+testcase:
+Meet me tomorrow at 5pm
+
+output:
+Location:  
+Date:  18 May
+Time:  05:00 PM
+
+testcase:
+Lets go to movie today at 6pm
+
+output:
+Location:  
+Date:  17 May
+Time:  06:00 PM
+
+testcase:
+I will be in Bangalore from 25 sep to 28 sep
+
+output:
+Location:  Bangalore
+Date:  29 Sep, 25 Sep
+Time:  12:00 AM (It gives default time as 12:00 AM when no time is mention in the input)
+
+
+
+
+
