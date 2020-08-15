@@ -1,0 +1,48 @@
+Parsing date and time.
+
+
+Writing code to parse date and time from a given string.
+
+Code is mainly using Duckling for Date time Parsing and for other labels like Location, Person etc. Spacy is being used.
+
+Example Input: I am going to Kormangala market tomorrow morning
+Output:
+
+ [ {'GPE': 'Kormangala'},
+ {'Date': [{'from': '08/15/2020'}, {'to': '08/15/2020'}]},
+ {'Time': [{'from': '00:00:00'}, {'to': '12:00:00'}]}
+ 
+Example Input: I will be in bangalore between 6th to 7th may
+Output:
+[{'Date': [{'from': '05/06/2021'}, {'to': '05/08/2021'}]},
+{'Time': [{'from': '00:00:00'}, {'to': '00:00:00'}]}] 
+ 
+
+Setup to run the below code on Jupyter Notebook:
+Spacy:
+
+Using pip:  pip install -U spacy 
+
+Using conda:  conda install -c conda-forge spacy
+Download a pretrained english model: python -m spacy download en_core_web_sm
+
+
+Duckling: (https://github.com/facebook/duckling)
+
+Follow this link (https://github.com/duckling-python-wrapper/fb_duckling) to install fb_duckling library.
+
+Pprint:
+
+this library is just to print Json/Dictionary in a hierarchical manner and hence called pretty print.
+
+pip install pprint .
+
+
+
+
+
+
+
+
+
+
